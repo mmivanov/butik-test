@@ -9,8 +9,9 @@ class Index(unittest.TestCase):
 
     def test_open_index_page(self):
         driver = self.driver
-        driver.get("https://www.butik.ru/")
+        driver.get("https://stage.butik.ru/")
         self.assertIn("Бутик.ру", driver.title)
+        self.assertNotIn("Butik.ru", driver.title)
 
     def tearDown(self):
         self.driver.close()
