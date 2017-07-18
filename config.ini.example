@@ -1,0 +1,10 @@
+[auth]
+login_correct =
+password_correct =
+login_incorrect = test@test.test
+password_incorrect = password_incorrect
+
+[browser]
+driver = ./features/browser/chromedriver
+implicity_wait = 10
+sleep = 0
