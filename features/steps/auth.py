@@ -27,3 +27,4 @@ def login(context, login_value, password_value):
     login_field.send_keys(login_value)
     password_field.send_keys(password_value)
     password_field.send_keys(Keys.RETURN)
+    time.sleep(3)
