@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from behave import *
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 @when('I open product card')

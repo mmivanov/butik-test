@@ -13,12 +13,16 @@ def open_url(context, url):
     context.browser.get(url)
 
 
-@when('I click on "{link_text}"')
+@when('I click on link "{link_text}"')
 def link_click(context, link_text):
     link = context.browser.find_element_by_link_text(link_text)
     assert link, 'ссылка ' + link_text + ' не найдена'
     link.click()
 
+
+@when('I above "{text}"')
+def text_hover(context, text):
+    element = context.browser.find_element_by_link_text(text)
 
 @when('I push button with id "{button_id}"')
 def button_click(context, button_id):
